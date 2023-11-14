@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+header {
+    float: left;
+    padding: 26px 0 0 0;
+}
+
+nav {
+    margin-bottom: 267px;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.parent_nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 29px;
+    margin-left: 47px;
+
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#dashboard {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+    background-color: #F2EEEA;
+    padding: 9px 69px 10px 27px;
+    width: 210px;
+    height: 45px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    margin-left: 20px;
+
+}
+
+#dashboard p {
+    color: #FF9C00;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.parent_nav p {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    opacity: 0.7;
+}
+
+.logo {
+    margin: 26px 27px 85px 27px;
+}
+
+#profile {
+    background-color: #F9F2EF;
+    width: 250px;
+    height: 400px;
+    padding: 30px 20px 228px 20px;
+}
+
+#profile h4 {
+    color: #000;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    opacity: 0.5;
+    margin-bottom: 16px;
+    margin-left: 10px;
+}
+
+#profile-name-parent {
+    display: flex;
+    justify-content: left;
+    gap: 4px 12px;
+    margin-left: 10px;
+    margin-bottom: 24px;
+    align-items: center;
+}
+
+#profile h5 {
+    color: #000;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+#profile p {
+    color: #FF9C00;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.log-out {
+    width: 210px;
+    height: 45px;
+    border-radius: 8px;
+    background: #FFF;
+
+    padding: 13px 0 12px 27px;
+}
+
+.log-out-parent {
+    display: flex;
+    justify-content: left;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.log-out-parent p {
+    color: #000;
+
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
