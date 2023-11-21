@@ -15,107 +15,107 @@
 
 <body>
     <div class="grid-container">
-    <section class="sidebar-container">
-        <div>
+        <section class="sidebar-container">
             <div>
-                <link rel="icon" href="img/sanakilogo 1.svg" type="img/svg">
-                <a href="index.html">
-                    <img src="img/sanakilogo 1.svg" alt="sanakilogo" class="logo">
+                <div>
+                    <link rel="icon" href="img/sanakilogo 1.svg" type="img/svg">
+                    <a href="index.html">
+                        <img src="img/sanakilogo 1.svg" alt="sanakilogo" class="logo">
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">
+                                <div id="dashboard">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-house"></i>
+                                    </div>
+
+                                    <!-- <i class="fas fa-house" style="color: #FF9C00;"></i> -->
+                                    <!-- НЕ РАБОТАЕТ. ПОЧЕМУ? -->
+
+                                    <!-- <img src="img/home.svg" alt=""> -->
+                                    <p>Dashboard</p>
+                                </div>
+                            </a></li>
+
+                        <li><a href="#">
+                                <div class="parent_nav">
+                                    <div class="icon">
+                                        <i class="fa-regular fa-file-lines"></i>
+                                    </div>
+                                    <!-- <img src="img/file-text.svg" alt=""> -->
+
+                                    <!-- <i class="fa-light fa-file-lines fa-2xl" style="color: #511f41;"></i> -->
+                                    <!-- НЕ РАБОТАЕТ. ПОЧЕМУ? -->
+
+                                    <p>Product</p>
+                                </div>
+                            </a></li>
+                        <li><a href="#">
+
+                                <div class="parent_nav">
+                                    <div class="icon">
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </div>
+                                    <!-- <img src="img/clipboard 1.svg" alt=""> -->
+                                    <p>Orders</p>
+                                </div>
+
+                            </a></li>
+                        <li><a href="#">
+                                <div class="parent_nav">
+                                    <div class="icon">
+                                        <i class="fa-regular fa-user"></i>
+                                    </div>
+                                    <!-- <img src="img/users.svg" alt=""> -->
+                                    <p>Customers</p>
+
+                                </div>
+                            </a></li>
+                        <li><a href="#">
+                                <div class="parent_nav">
+                                    <div class="icon">
+                                        <i class="fa-regular fa-comments"></i>
+                                    </div>
+                                    <!-- <img src="img/chat 1.svg" alt=""> -->
+                                    <p>CusChat</p>
+                                </div>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div id="profile">
+                <h4>Profile</h4>
+                <div id="profile-name-parent">
+                    <div><img src="img/Ellipse 1.svg" alt=""></div>
+                    <div>
+                        <h5>Amishka</h5>
+                        <p>Shopper</p>
+                    </div>
+                </div>
+                <div class="log-out"><a href="#" class="log-out-parent">
+                        <img src="img/log-out.svg" alt="">
+                        <p>Log out</p>
+                </div>
                 </a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#">
-                            <div id="dashboard">
-                                <div class="icon">
-                                    <i class="fa-solid fa-house"></i>
-                                </div>
 
-                                <!-- <i class="fas fa-house" style="color: #FF9C00;"></i> -->
-                                <!-- НЕ РАБОТАЕТ. ПОЧЕМУ? -->
+        </section>
 
-                                <!-- <img src="img/home.svg" alt=""> -->
-                                <p>Dashboard</p>
-                            </div>
-                        </a></li>
+        <!-- ------------------ -->
+        <header id="head-container">
+            <h1>Dashboard</h1>
+            <div id="current_date_time_block">
+                <script type="text/javascript">
+                    document.write(Date());
 
-                    <li><a href="#">
-                            <div class="parent_nav">
-                                <div class="icon">
-                                    <i class="fa-regular fa-file-lines"></i>
-                                </div>
-                                <!-- <img src="img/file-text.svg" alt=""> -->
-
-                                <!-- <i class="fa-light fa-file-lines fa-2xl" style="color: #511f41;"></i> -->
-                                <!-- НЕ РАБОТАЕТ. ПОЧЕМУ? -->
-
-                                <p>Product</p>
-                            </div>
-                        </a></li>
-                    <li><a href="#">
-
-                            <div class="parent_nav">
-                                <div class="icon">
-                                    <i class="fa-regular fa-clipboard"></i>
-                                </div>
-                                <!-- <img src="img/clipboard 1.svg" alt=""> -->
-                                <p>Orders</p>
-                            </div>
-
-                        </a></li>
-                    <li><a href="#">
-                            <div class="parent_nav">
-                                <div class="icon">
-                                    <i class="fa-regular fa-user"></i>
-                                </div>
-                                <!-- <img src="img/users.svg" alt=""> -->
-                                <p>Customers</p>
-
-                            </div>
-                        </a></li>
-                    <li><a href="#">
-                            <div class="parent_nav">
-                                <div class="icon">
-                                    <i class="fa-regular fa-comments"></i>
-                                </div>
-                                <!-- <img src="img/chat 1.svg" alt=""> -->
-                                <p>CusChat</p>
-                            </div>
-                        </a></li>
-                </ul>
-            </nav>
-        </div>
-        <div id="profile">
-            <h4>Profile</h4>
-            <div id="profile-name-parent">
-                <div><img src="img/Ellipse 1.svg" alt=""></div>
-                <div>
-                    <h5>Amishka</h5>
-                    <p>Shopper</p>
-                </div>
+                </script>
             </div>
-            <div class="log-out"><a href="#" class="log-out-parent">
-                    <img src="img/log-out.svg" alt="">
-                    <p>Log out</p>
-            </div>
-            </a>
-        </div>
 
-    </section>
+        </header>
 
-    <!-- ------------------ -->
-    <header id="head-container">
-        <h1>Dashboard</h1>
-        <div id="current_date_time_block">
-            <script type="text/javascript">
-                document.write(Date());
 
-            </script>
-        </div>
-
-    </header>
-
-    
         <div class="grid-item-1 order-action-container">
             <div>
                 <h2>240</h2>
@@ -224,6 +224,9 @@
 
     <script src="https://kit.fontawesome.com/47164a9a10.js" crossorigin="anonymous"></script>
 
+
+
+ 
 </body>
 
 </html>
