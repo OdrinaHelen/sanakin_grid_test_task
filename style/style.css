@@ -13,11 +13,14 @@ body {
     line-height: normal;
 }
 
-header {
+.sidebar-container {
     float: left;
     /* padding: 1.7rem 0 0 0; */
     width: 250px;
     min-height: 100vh;
+    position: sticky;
+    grid-area: 1/1/7/2;
+
 }
 
 /* em ; rem (root element)  1 em = 14px */
@@ -156,21 +159,31 @@ nav a {
 
 /* ------------------------ */
 
-.flex-container {
+.grid-container {
     display: grid;
     /* grid-template: 100px 100px 1px 163px / 325px 325px auto; */
-    grid-template-columns: minmax(325px auto) minmax(325px auto) minmax(440px auto);
-      /* grid-template-columns: repeat(auto-fit, minmax(325px, 1fr)); */
 
-    grid-template-rows: 100px 100px 1px 163px;
+    /* grid-template-columns: 355px 355px minmax(440px auto); */
+    /* grid-template-columns: repeat(auto-fit, minmax(325px, 1fr)); q */
+    /* grid-template-columns: repeat(auto-fit, minmax(1fr, 1fr, 1fr)); */
+    /* grid-template-columns: 355px 1fr 1fr; */
+    /* grid-template-columns: 1fr 1fr 1fr;  */
+    grid-template-columns: 250px repeat(3, 1fr);
 
+    /* grid-template-rows: 100px 100px 1px 163px; */
+    grid-template-rows: 60px 100px 100px 1px 163px 1fr;
     gap: 24px 20px;
     padding: 0 44px 0 23px;
 
 
 }
 
-.flex-item-1 {
+/* .order-action-container{
+        max-width: 355px;
+        height: 100px;
+} */
+
+.grid-item-1 {
     border-radius: 9px;
     background: #FFF;
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
@@ -182,49 +195,52 @@ nav a {
 
 }
 
-.flex-item-1 h2 {
+.grid-item-1 h2 {
     color: #FF9C00;
     font-size: 36px;
     font-weight: 500;
 }
 
-.flex-item-1 p {
+.grid-item-1 p {
     color: #FF9C00;
     font-size: 14px;
     font-weight: 500;
 }
 
-.flex-item-1 img {
+.grid-item-1 img {
     width: 40px;
     height: 40px;
 }
 
-.flex-item-3 {
+.grid-item-3 {
     /*  grid-row-start, grid-column-start, grid-row-end и grid-column-end. */
     border-radius: 9px;
-    background: #FFF;
+    background: #FFFFFF;
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
-    grid-area: 1/3/5/4;
+    grid-area: 2/4/6/5;
     padding: 15px 18px 21px 20px;
 
 }
-.flex-item-3 h2{
+
+.grid-item-3 h2 {
     color: #000000;
     font-size: 20px;
     font-weight: 500;
-    
+
 }
-.flex-item-3 h3 {
+
+.grid-item-3 h3 {
     color: #000000;
     font-size: 12px;
     font-weight: 600;
     padding: 9px 0 5px 0;
 }
 
-.flex-item-3>div{
+.grid-item-3>div {
     display: flex;
     justify-content: space-between;
 }
+
 #stock-Summery {
     padding-top: 22px;
     display: flex;
@@ -232,25 +248,29 @@ nav a {
     gap: 10px;
 
 }
-#stock-Summery>div{
+
+#stock-Summery>div {
     display: flex;
     justify-content: start;
     gap: 10px 10px;
 }
-#stock-Summery p{
+
+#stock-Summery p {
     color: #000000;
     font-size: 14px;
     font-weight: 400;
 }
-#added-Stock{
-    background-color:#FF9C00;
+
+#added-Stock {
+    background-color: #FF9C00;
     width: 20px;
     height: 20px;
 }
-#available-Stock{
-   background-color:#FFEAC9;
-   width: 20px;
-   height: 20px;
+
+#available-Stock {
+    background-color: #FFEAC9;
+    width: 20px;
+    height: 20px;
 }
 
 .text-ex-image {
@@ -262,7 +282,7 @@ nav a {
     /* Путь к картинке */
     background-repeat: no-repeat;
     /* Фон не повторяется */
-    background-size:cover;
+    background-size: contain;
     /* Растягиваем  фон по высоте и ширине */
     background-position: center;
     /* Позиция фона по центру */
@@ -270,27 +290,30 @@ nav a {
     /* Высота блока */
 }
 
-.text-ex-image>p{
+.text-ex-image>p {
     color: #000000;
     text-align: center;
     font-size: 24px;
     font-weight: 500;
 }
-.row{
+
+.row {
     display: flex;
     justify-content: space-between;
     border-bottom: 0.5px solid #848484;
     padding: 10px 0;
 }
-#name{
-color: #000;
-font-family: Inter;
-font-size: 12px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+
+#name {
+    color: #000;
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
-#procent{
+
+#procent {
     color: #DD3A3A;
     text-align: right;
     font-size: 12px;
@@ -305,16 +328,16 @@ line-height: normal;
 
 
 
-.flex-item-4 {
+.grid-item-4 {
     /* background-color: #000000; */
-    grid-area: 3/1/4/3;
+    grid-area: 4/2/5/4;
     background: #E3E3E3;
     /* margin: 10px 0; */
     /* margin-top: 10px; */
 }
 
 
-.flex-item-2 {
+.grid-item-2 {
     border-radius: 9px;
     background: #FFE3B7;
     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
@@ -322,30 +345,40 @@ line-height: normal;
     /* justify-content: flex-start; */
     flex-direction: column;
     padding: 20px 18px 20px 20px;
+    height: 163px;
 }
-.flex-item-2 a{
-       text-decoration: none;
- 
+
+.grid-item-2 a {
+    text-decoration: none;
+
 }
-.flex-item-2 h2{
+
+.grid-item-2 h2 {
     color: #000000;
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 10px;
 }
-.flex-item-2 p{
+
+.grid-item-2 p {
     color: #6D6D6D;
     font-size: 14px;
     font-weight: 400;
     margin-bottom: 32px;
 }
-.flex-item-2 img{
+
+.grid-item-2 img {
     float: right;
 }
+
 #head-container {
     display: flex;
     justify-content: space-between;
-    padding: 38px 44px 51px 23px;
+    /* padding: 38px 44px 51px 23px; */
+    padding-top: 38px;
+    align-items: center;
+
+    grid-area: 1/2/2/5;
 }
 
 #head-container h1 {
@@ -356,6 +389,61 @@ line-height: normal;
 
 #current_date_time_block {
     color: #000000;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+    .grid-container {
+        grid-template-columns: 250px 1fr 1fr;
+        grid-template-rows: 60px 100px 100px 1px 163px 440px 1fr;
+    }
+
+    .sidebar-container {
+        grid-area: 1/1/8/2;
+    }
+
+    #head-container {
+        grid-area: 1/2/2/4;
+    }
+
+    .grid-item-3 {
+        grid-area: 6/2/7/4;
+    }
+
+    .grid-item-4 {
+        grid-area: 4/2/5/4;
+    }
+}
+
+/* 1 уровень сложности: https: //www.figma.com/file/izfDtw6zulYboLY5NFEwlw/Sanakin.lk---HND-Final-Project-(Community)?node-id=168%3A4&mode=dev
+
+ 1) реализовать макет до new orders 2) использовать font awesome для изображений 3) использовать grid для верстки 4) создать media query для экрана 350-800px (для экрана 801-1200 сделали на занятии) от 1200px как в макете 5) сделать sidebar с позицией sticky,
+ чтобы при прокрутки страницы всегда оставался видим 2 уровень сложности:
+
+
+
+  */
+@media screen and (max-width: 800px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 60px 100px 100px 100px 100px 1px 163px 163px 440px;
+    }
+
+    .sidebar-container {
+        grid-area: 1/1/2/2;
+    }
+
+    #head-container {
+        grid-area: 2/1/3/2;
+    }
+
+    .grid-item-3 {
+        grid-area: 10/1/11/2;
+    }
+
+    .grid-item-4 {
+        grid-area: 7/1/8/2;
+    }
 }
